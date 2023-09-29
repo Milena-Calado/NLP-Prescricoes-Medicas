@@ -13,7 +13,7 @@ abstract PrescAbs = {
     Aplicar : Quantidade -> MedicamentoInjetavel -> DosagemInjetavel -> Acao ;    
     
     Dipirona, Paracetamol, Ibuprofeno : Medicamento ;
-    Benzetacil : MedicamentoInjetavel ;
+    Benzetacil, Profenid : MedicamentoInjetavel ;
     Manha, Tarde, Noite : Instrucao ;
     Cinquenta, Cem : Dosagem ;
     Dez, Vinte : DosagemInjetavel ;

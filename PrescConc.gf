@@ -17,7 +17,7 @@ concrete PrescConc of PrescAbs = {
         \n -> case n of { Sg => " " ; Pl => "s" } ;
 
   lin
-    Do Acao Instrucao = {s = Acao.s ++ "pela" ++ Instrucao.s} ;
+    Do Acao Instrucao = {s = Acao.s ++ Instrucao.s} ;
 
     Tomar Quantidade Medicamento Dosagem = {s = "Tomar" ++ Quantidade.s ++ "comprimido" + copula(Quantidade.n) ++ "de" ++ Medicamento.s ++ Dosagem.s } ;
     Aplicar Quantidade MedicamentoInjetavel DosagemInjetavel = {s = "Aplicar" ++ Quantidade.s ++ "dose"  + copula(Quantidade.n) ++ "de" ++ MedicamentoInjetavel.s ++ DosagemInjetavel.s } ; 
@@ -27,10 +27,11 @@ concrete PrescConc of PrescAbs = {
     Ibuprofeno = {s = "ibuprofeno"} ;
 
     Benzetacil = {s = "benzetacil"} ;
+    Profenid = {s = "profenid"} ;
 
-    Manha = {s = "manhã"} ;
-    Tarde = {s = "tarde"} ;
-    Noite = {s = "noite"} ;
+    Manha = {s = "de 8 em 8 horas"} ;
+    Tarde = {s = "de 12 em 12 horas"} ;
+    Noite = {s = "após o jantar"} ;
 
     Um = {s = "1" ; n = Sg} ;
     Dois = {s = "2" ; n = Pl} ;
