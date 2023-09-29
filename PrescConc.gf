@@ -31,7 +31,7 @@ concrete PrescConc of PrescAbs = {
 
     Manha = {s = "de 8 em 8 horas"} ;
     Tarde = {s = "de 12 em 12 horas"} ;
-    Noite = {s = "após o jantar"} ;
+    Noite = {s = "apos o jantar"} ;
 
     Um = {s = "1" ; n = Sg} ;
     Dois = {s = "2" ; n = Pl} ;
