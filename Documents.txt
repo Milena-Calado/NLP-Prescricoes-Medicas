@@ -4,7 +4,7 @@ Medicamentos Injetaveis: benzetacil, profenid;
 Instruções: de 8 em 8 horas, de 12 em 12 horas, após o jantar;
 Dosagem: 50mg, 100mg;
 Dosagem Injetaveis: 10ml, 20ml;
-
+ 
 comandos:
 inicializar o Grammatical Framework: digite gf no terminal
 Importar a classe Concreta: digite import nome_da_classe.gf no terminal
@@ -20,7 +20,7 @@ PrescAbs> i PrescConc.gf
 - compiling PrescConc.gf...   write file PrescConc.gfo
 linking ... OK
 
-Languages: PrescConc
+Languages: PrescConcBra
 0 msec
 PrescAbs> gr -number=50 | l
 Tomar 1 comprimido de dipirona 50mg de 8 em 8 horas
@@ -73,3 +73,21 @@ Tomar 1 comprimido de ibuprofeno 100mg de 8 em 8 horas
 Aplicar 3 doses de benzetacil 10ml apos o jantar
 Tomar 2 comprimidos de dipirona 100mg apos o jantar
 Aplicar 2 doses de profenid 10ml apos o jantar
+
+PrescAbsBra> import PrescConcEng.gf                      
+linking ... OK
+Abstract changed, previous concretes discarded.
+
+Languages: PrescConcEng
+15 msec
+PrescAbsEng> gr -number=10 | linearize -lang=PrescConcEng
+Take 1 pill in paracetamol 50mg every 12 hours
+Apply 1 injection in profenid 20ml every 12 hours
+Apply 1 injection in profenid 10ml every 12 hours
+Take 2 pills in dipiron 50mg after dinner
+Apply 1 injection in profenid 10ml every 12 hours
+Take 2 pills in ibuprofen 100mg after dinner
+Apply 2 injections in benzetacil 10ml every 8 hours
+Apply 1 injection in profenid 20ml after dinner
+Take 2 pills in dipiron 50mg every 12 hours
+Apply 1 injection in benzetacil 10ml every 8 hours
