@@ -9,66 +9,67 @@ comandos:
 inicializar o Grammatical Framework: digite gf no terminal
 Importar a classe Concreta: digite import nome_da_classe.gf no terminal
 Gerar as frases aleatórias: digite gr -number=Quantidade_de_frases | linearize
+Para gerar o arquivo pgf: digite no terminal python: gf -make PrescConc.gf
+linking ... OK
+Writing PrescAbs.pgf...
 
 Exemplos de frases geradas:
 
-Aplicar 2 doses de benzetacil (20ml) de 12 em 12 horas
-Aplicar 1 dose de benzetacil (20ml) de 8 em 8 horas
-Tomar 2 comprimidos de paracetamol (50mg) de 8 em 8 horas
-Aplicar 3 doses de benzetacil (10ml) após o jantar
-Aplicar 2 doses de profenid (20ml) após o jantar
-Tomar 2 comprimidos de paracetamol (100mg) de 8 em 8 horas
-Tomar 2 comprimidos de ibuprofeno (50mg) após o jantar
-Tomar 3 comprimidos de dipirona (100mg) após o jantar
-Tomar 1 comprimido de ibuprofeno (100mg) após o jantar
-Aplicar 2 doses de benzetacil (20ml) de 8 em 8 horas
-Aplicar 3 doses de profenid (10ml) de 12 em 12 horas
-Tomar 3 comprimidos de dipirona (100mg) de 8 em 8 horas
-Tomar 3 comprimidos de paracetamol (50mg) apos o jantar
-Tomar 1 comprimido de ibuprofeno (100mg) apos o jantar
-Tomar 2 comprimidos de dipirona (100mg) apos o jantar
-Aplicar 1 dose de profenid (10ml) de 12 em 12 horas
-Tomar 3 comprimidos de dipirona (50mg) apos o jantar
-Tomar 2 comprimidos de dipirona (100mg) de 12 em 12 horas
-Tomar 1 comprimido de paracetamol (50mg) de 12 em 12 horas
-Tomar 1 comprimido de ibuprofeno (50mg) de 8 em 8 horas
-Tomar 2 comprimidos de dipirona (50mg) de 12 em 12 horas
-Tomar 3 comprimidos de paracetamol (50mg) de 12 em 12 horas
-Aplicar 2 doses de benzetacil (10ml) apos o jantar
-Tomar 1 comprimido de dipirona (100mg) de 12 em 12 horas
-Tomar 3 comprimidos de ibuprofeno (50mg) apos o jantar
-Aplicar 3 doses de benzetacil (20ml) apos o jantar
-Aplicar 3 doses de benzetacil (20ml) de 8 em 8 horas
-Tomar 1 comprimido de dipirona (100mg) de 8 em 8 horas
-Aplicar 3 doses de benzetacil (20ml) apos o jantar
-Aplicar 3 doses de benzetacil (20ml) de 12 em 12 horas
-Tomar 2 comprimidos de dipirona (50mg) de 8 em 8 horas
-Tomar 2 comprimidos de ibuprofeno (50mg) de 8 em 8 horas
-Tomar 2 comprimidos de paracetamol (100mg) de 12 em 12 horas
-Aplicar 2 doses de benzetacil (20ml) de 12 em 12 horas
-Tomar 3 comprimidos de dipirona (100mg) apos o jantar
-Aplicar 1 dose de benzetacil (10ml) de 12 em 12 horas
-Tomar 2 comprimidos de paracetamol (50mg) apos o jantar
-Aplicar 1 dose de benzetacil (20ml) apos o jantar
-Tomar 1 comprimido de paracetamol (100mg) apos o jantar
-Tomar 3 comprimidos de dipirona (100mg) de 8 em 8 horas
-Tomar 1 comprimido de ibuprofeno (50mg) de 8 em 8 horas
-Tomar 2 comprimidos de dipirona (50mg) de 8 em 8 horas
-Tomar 3 comprimidos de ibuprofeno (50mg) de 12 em 12 horas
-Tomar 3 comprimidos de paracetamol (100mg) de 8 em 8 horas
-Aplicar 3 doses de benzetacil (10ml) apos o jantar
-Aplicar 3 doses de profenid (10ml) apos o jantar
-Tomar 1 comprimido de dipirona (100mg) apos o jantar
-Tomar 3 comprimidos de ibuprofeno (50mg) apos o jantar
-Aplicar 3 doses de profenid (10ml) apos o jantar
-Aplicar 2 doses de profenid (20ml) apos o jantar
-Tomar 2 comprimidos de dipirona (50mg) de 8 em 8 horas
-Aplicar 3 doses de benzetacil (10ml) apos o jantar
-Aplicar 3 doses de profenid (10ml) de 8 em 8 horas
-Tomar 1 comprimido de paracetamol (50mg) de 12 em 12 horas
-Aplicar 3 doses de profenid (10ml) apos o jantar
-Tomar 2 comprimidos de paracetamol (50mg) de 8 em 8 horas
-Tomar 2 comprimidos de ibuprofeno (100mg) apos o jantar
-Tomar 1 comprimido de dipirona (100mg) apos o jantar
-Aplicar 2 doses de benzetacil (10ml) apos o jantar
-Aplicar 3 doses de benzetacil (20ml) de 8 em 8 horas
+0 msec
+PrescAbs> i PrescConc.gf   
+- compiling PrescConc.gf...   write file PrescConc.gfo
+linking ... OK
+
+Languages: PrescConc
+0 msec
+PrescAbs> gr -number=50 | l
+Tomar 1 comprimido de dipirona 50mg de 8 em 8 horas
+Aplicar 3 doses de profenid 10ml de 12 em 12 horas
+Tomar 2 comprimidos de ibuprofeno 100mg de 12 em 12 horas
+Aplicar 1 dose de benzetacil 10ml apos o jantar
+Tomar 3 comprimidos de dipirona 50mg de 8 em 8 horas
+Tomar 1 comprimido de ibuprofeno 50mg de 12 em 12 horas
+Tomar 1 comprimido de ibuprofeno 50mg apos o jantar
+Tomar 3 comprimidos de dipirona 50mg apos o jantar
+Tomar 1 comprimido de ibuprofeno 50mg apos o jantar
+Tomar 1 comprimido de ibuprofeno 100mg de 12 em 12 horas
+Tomar 2 comprimidos de paracetamol 50mg de 8 em 8 horas
+Tomar 3 comprimidos de paracetamol 100mg apos o jantar
+Tomar 3 comprimidos de dipirona 50mg de 8 em 8 horas
+Tomar 1 comprimido de ibuprofeno 50mg de 8 em 8 horas
+Aplicar 1 dose de benzetacil 10ml de 12 em 12 horas
+Tomar 1 comprimido de paracetamol 100mg de 12 em 12 horas
+Aplicar 2 doses de benzetacil 20ml de 12 em 12 horas
+Tomar 1 comprimido de paracetamol 50mg de 12 em 12 horas
+Aplicar 3 doses de profenid 20ml apos o jantar
+Tomar 3 comprimidos de ibuprofeno 100mg apos o jantar
+Tomar 2 comprimidos de paracetamol 50mg de 8 em 8 horas
+Tomar 3 comprimidos de dipirona 50mg de 8 em 8 horas
+Aplicar 1 dose de profenid 20ml apos o jantar
+Aplicar 2 doses de benzetacil 20ml de 8 em 8 horas
+Tomar 2 comprimidos de ibuprofeno 100mg apos o jantar
+Tomar 1 comprimido de paracetamol 50mg de 12 em 12 horas
+Aplicar 3 doses de benzetacil 20ml de 12 em 12 horas
+Tomar 3 comprimidos de ibuprofeno 100mg de 12 em 12 horas
+Tomar 1 comprimido de dipirona 100mg de 12 em 12 horas
+Tomar 1 comprimido de ibuprofeno 100mg de 8 em 8 horas
+Aplicar 2 doses de benzetacil 20ml apos o jantar
+Tomar 2 comprimidos de dipirona 100mg de 12 em 12 horas
+Aplicar 2 doses de profenid 20ml de 8 em 8 horas
+Aplicar 2 doses de benzetacil 10ml de 12 em 12 horas
+Aplicar 1 dose de profenid 10ml de 8 em 8 horas
+Tomar 2 comprimidos de paracetamol 50mg de 12 em 12 horas
+Tomar 1 comprimido de ibuprofeno 50mg de 8 em 8 horas
+Tomar 2 comprimidos de ibuprofeno 100mg apos o jantar
+Tomar 2 comprimidos de dipirona 100mg apos o jantar
+Tomar 1 comprimido de dipirona 100mg de 12 em 12 horas
+Tomar 3 comprimidos de ibuprofeno 50mg de 8 em 8 horas
+Tomar 2 comprimidos de ibuprofeno 100mg de 12 em 12 horas
+Tomar 3 comprimidos de ibuprofeno 50mg de 12 em 12 horas
+Aplicar 3 doses de benzetacil 10ml de 8 em 8 horas
+Aplicar 3 doses de profenid 10ml de 12 em 12 horas
+Tomar 2 comprimidos de ibuprofeno 50mg de 12 em 12 horas
+Tomar 1 comprimido de ibuprofeno 100mg de 8 em 8 horas
+Aplicar 3 doses de benzetacil 10ml apos o jantar
+Tomar 2 comprimidos de dipirona 100mg apos o jantar
+Aplicar 2 doses de profenid 10ml apos o jantar
