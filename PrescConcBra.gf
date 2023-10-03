@@ -38,7 +38,7 @@ concrete PrescConcBra of PrescAbsBra = {
     Tres = {s = "3" ; n = Pl} ;
 
     Cinquenta = {s = "50mg" ; n = Sg} ;
-    Cem = {s = "100mg" ; noite = Sg} ;
+    Cem = {s = "100mg" ; n = Sg} ;
 
     Dez = {s = "10ml" ; n = Sg} ;
     Vinte = {s = "20ml" ; n = Sg} ;
